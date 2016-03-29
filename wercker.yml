@@ -2,7 +2,7 @@ box: ruby
 build:
     steps:
         # Execute the bundle install step, a step provided by wercker
-        - bundle-install
+        - bundle install
         # Execute a custom script step.
         - script:
             name: middleman build
