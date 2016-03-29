@@ -14,7 +14,7 @@ deploy:
     steps:
         # Execute the s3sync deploy step, a step provided by wercker
         - s3sync:
-            key_id: AKIAIYNSBYQ4Q2JRCNHA
-            key_secret: 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
-            bucket_url: http://middleman-demo.s3-website-us-west-1.amazonaws.com`
+            key_id: $ AWS_ACCESS_KEY_ID 
+            key_secret: $ AWS_SECRET_ACCESS_KEY
+            bucket_url: $ AWS_BUCKET_URL
             source_dir: build/
