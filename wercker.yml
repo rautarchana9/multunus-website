@@ -2,6 +2,9 @@ box: ruby
 build:
     steps:
         - script:
+            name:  NodeJS install
+            code:  sudo apt-get install nodejs
+        - script:
             name :  bundler setting 
             code :  bundle config build.nokogiri --use-system-libraries
         # Execute the bundle install step, a step provided by wercker
