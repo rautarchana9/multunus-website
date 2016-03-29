@@ -1,0 +1,17 @@
+box: wercker/ruby
+build:
+    steps:
+        # Execute the bundle install step, a step provided by wercker
+        - bundle-install
+        # Execute a custom script step.
+        - script:
+            name: middleman build
+            code: bundle exec middleman build --verbose
+deploy:
+    steps:
+        # Execute the s3sync deploy step, a step provided by wercker
+        - s3sync:
+            key_id: AKIAIYNSBYQ4Q2JRCNHA
+            key_secret: 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
+            bucket_url: s3://middleman-demo
+            source_dir: build/
