@@ -13,5 +13,5 @@ deploy:
         - s3sync:
             key_id: AKIAIYNSBYQ4Q2JRCNHA
             key_secret: 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
-            bucket_url: s3://middleman-demo
+            bucket_url: http://middleman-demo.s3-website-us-west-1.amazonaws.com`
             source_dir: build/
