@@ -8,7 +8,7 @@ build:
         - bundle-install
         # Execute a custom script step.
         - script:
-            name: bin/middleman build
+            name: middleman build
             code: bundle exec middleman build --verbose
 deploy:
     steps:
