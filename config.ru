@@ -8,6 +8,7 @@ require 'fileutils'
 FileUtils.mkdir('log') unless File.exist?('log')
 ::Middleman::Logger.singleton("log/#{ENV['RACK_ENV']}.log")
 
+require 'helpers/extra_tags_helpers'
 app = ::Middleman::Application.new
 
 run ::Middleman::Rack.new(app).to_app

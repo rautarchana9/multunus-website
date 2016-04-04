@@ -1,7 +1,19 @@
 <div class="carousel">
     <div class="container-fluid">
         <div class="row">
-            <%= image_tag 'home_header.png', :width => '100%' %>
+            <div class="col-xs-12 no-padding">
+                <%= carousel_tag [{
+                    image: asset_path(:images, 'abstract_fish_hd_wallpapers.png'),
+                    title: 'Journey is the reward'
+                },{
+                    image: asset_path(:images, 'fire-abstract-HD-wallpaper.jpg'),
+                    title: 'Journey is the reward'
+                },{
+                    image: asset_path(:images, 'Abstract-Wallpaper-Pics-K7N.png'),
+                    title: 'Journey is the reward'
+                }]
+                %>
+            </div>
         </div>
     </div>
 </div>
