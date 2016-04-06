@@ -20,6 +20,3 @@ gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 
 # For feed.xml.builder
 gem 'builder', '~> 3.2', '>= 3.2.2'
-
-#for exporting wordpress posts
-gem 'wp2middleman'

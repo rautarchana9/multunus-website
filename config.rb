@@ -22,7 +22,7 @@ page '/*.txt', layout: false
 
 activate :blog do |blog|
   # This will add a prefix to all links, template references and source paths
-  blog.prefix = "blog"
+  # blog.prefix = "blog"
 
   # blog.permalink = "{year}/{month}/{day}/{title}.html"
   # Matcher for blog source files
@@ -42,7 +42,7 @@ activate :blog do |blog|
   # Enable pagination
   # blog.paginate = true
   # blog.per_page = 10
-  #blog.page_link = "page/{num}"
+  # blog.page_link = "page/{num}"
 end
 
 page "/feed.xml", layout: false
