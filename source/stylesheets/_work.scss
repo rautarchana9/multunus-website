@@ -1,0 +1,40 @@
+.case-study-element {
+  background:
+    linear-gradient(
+      rgba(29, 188, 224, 0.8),
+      rgba(29, 188, 224, 0.8)
+    ),
+    url(../images/cover-image2.jpg);
+    background-size: cover;
+  color: $primary-white;
+  margin: 2%;
+  .case-study-card {
+    padding: 11.9% 0;
+
+    ul{
+      margin-bottom: 0; 
+    }
+    .title {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    .hash-tag {
+      color: $secondary-white;
+      font-size: $font-size-base;
+      text-transform: uppercase;
+      &:before {
+        padding-left: 5px;
+        content: "#";
+      }
+    }
+  }
+}
+
+.work-synopsis {
+    margin-top: 18px;
+    margin-bottom: 9%;
+    font-size: $font-size-medium;
+    color: $primary-grey;
+    line-height: 1.6;
+    font-family: $secondary-font-family;
+}
