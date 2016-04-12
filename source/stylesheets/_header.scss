@@ -1,0 +1,18 @@
+.header {
+    .navbar-brand {
+        padding-top: 10px;
+        img {
+            display: inline-block;
+        }
+        .text {
+            vertical-align: middle;
+            font-size: $font-size-large;
+            color: $primary-black;
+        }
+    }
+    .nav.navbar-nav.navbar-right {
+        li a {
+            color: $primary-grey;
+        }
+    }
+}

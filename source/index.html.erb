@@ -1,19 +1,126 @@
-<div class="carousel">
+<section class="what-we-do-banner">
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12 no-padding">
-                <%= carousel_tag [{
-                    image: asset_path(:images, 'abstract_fish_hd_wallpapers.png'),
-                    title: 'Journey is the reward'
-                },{
-                    image: asset_path(:images, 'fire-abstract-HD-wallpaper.jpg'),
-                    title: 'Journey is the reward'
-                },{
-                    image: asset_path(:images, 'Abstract-Wallpaper-Pics-K7N.png'),
-                    title: 'Journey is the reward'
-                }]
-                %>
+        <div class="col-xs-12">
+            <div class="title-container">
+                <h1 class="title text-uppercase text-center">We design, engineer & grow <span>your product</span></h1>
+                <p class="description text-center">9 of 10 startups fail. We'll help you be the one that build a great brand.</p>
             </div>
         </div>
     </div>
-</div>
+</section>
+
+<section class="section what-we-believe clearfix">
+</section>
+
+<section class="section what-we-do clearfix">
+    <h1 class="title text-center font-weight-light">What we do</h1>
+    <div class="container tile-container">
+        <div class="col-md-4 tile horizontal-tile text-center">
+            <%= image_tag 'what-we-do-design.svg' %>
+            <h3>Design</h3>
+            <p>Classifieds are usually the first place you think of when you are getting ready to make a purchase.</p>
+            <a class="font-weight-bold" href="#">Know more</a>
+        </div>
+        <div class="col-md-4 tile horizontal-tile text-center">
+            <%= image_tag 'what-we-do-engineering.svg' %>
+            <h3>Engineering</h3>
+            <p>Classifieds are usually the first place you think of when you are getting ready to make a purchase.</p>
+            <a class="font-weight-bold" href="#">Know more</a>
+        </div>
+        <div class="col-md-4 tile text-center">
+            <%= image_tag 'what-we-do-growth.svg' %>
+            <h3>Growth</h3>
+            <p>Classifieds are usually the first place you think of when you are getting ready to make a purchase.</p>
+            <a class="font-weight-bold" href="#">Know more</a>
+        </div>
+    </div>
+</section>
+
+<section class="section our-work clearfix">
+    <h1 class="title text-center font-weight-light">Our Work</h1>
+    <div class="container">
+        <div class="row tile">
+            <div class="col-md-6 text-center">
+                <%= image_tag 'img1.jpg', class: 'img-responsive'%>
+            </div>
+            <div class="col-md-6 text-left">
+                <h2 class="text-capitalize">Research In Advertising</h2>
+                <p class="font-weight-light">There are several ways people can make money online. From selling products to advertising.</p>
+                <a class="font-weight-bold" href="#">Read More</a>
+            </div>
+        </div>
+        <div class="row tile">
+            <div class="col-md-6 col-md-push-6 text-center">
+                <%= image_tag 'img1.jpg', class: 'img-responsive'%>
+            </div>
+            <div class="col-md-6 col-md-pull-6 text-left">
+                <h2 class="text-capitalize">Bryce Canyon Travel Destination</h2>
+                <p class="font-weight-light">Learn how to improve your playing quality and even overall understanding of online gaming and how you perform while playing online.</p>
+                <a class="font-weight-bold" href="#">Read More</a>
+            </div>
+        </div>
+        <div class="row">
+            <a class="col-xs-12 btn btn-muted with-arrow text-center font-weight-bold" href="#">See more case studies</a>
+        </div>
+    </div>
+</section>
+
+<section class="section our-process clearfix">
+    <h1 class="title text-center font-weight-light">Our Process</h1>
+    <div class="container">
+        <div class="row tile">
+            <div class="col-md-6">
+                <%= image_tag 'build-measure-learn.svg', class: 'img-responsive' %>
+            </div>
+            <div class="col-md-6">
+                <p>The preservation of human life is the ultimate value, a pillar of ethics and the foundation of all morality. This held true in most cultures and societies throughout history.</p>
+                <a class="font-weight-bold">Read our playbook</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section our-thoughts clearfix">
+    <h1 class="title text-center font-weight-light">Our thoughts</h1>
+    <div class="container">
+        <div class="row tile">
+            <div class="col-md-6">
+                <div class="blog-tile">
+                    <h6 class="text-uppercase text-left category-title font-weight-bold">Business</h6>
+                    <h3 class="title">5 Tips For Offshore Software Development</h3>
+                    <p class="short-description">With MySpace becoming more popular every day, there is the constant need to be different. There are many more lines followed by this but hidden</p>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="blog-tile">
+                    <h6 class="text-uppercase text-left category-title font-weight-bold">Marketing</h6>
+                    <h3 class="title">How To Boost Your Traffic Of Your Blog And Destroy The Competition</h3>
+                    <p class="short-description">To a general advertiser outdoor advertising is worthy of consideration. Outdoor advertising is considered.There are many more lines followed by this but hidden</p>
+                </div>
+            </div>
+        </div>
+        <div class="row tile">
+            <div class="col-md-4">
+                <div class="blog-tile">
+                    <h6 class="text-uppercase text-left category-title font-weight-bold">Design</h6>
+                    <h3 class="title">A Starter Guide To Learning Design</h3>
+                    <p class="short-description">With MySpace becoming more popular every day, there is the constant need to be different.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-tile">
+                    <h6 class="text-uppercase text-left category-title font-weight-bold">Technology</h6>
+                    <h3 class="title">Merge Hells? Feature Toggles to the rescue!</h3>
+                    <p class="short-description">With MySpace becoming more popular every day, there is the constant need to be different.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="blog-tile">
+                    <h6 class="text-uppercase text-left category-title font-weight-bold">Design</h6>
+                    <h3 class="title">Growing an early stage startups</h3>
+                    <p class="short-description">With MySpace becoming more popular every day, there is the constant need to be different.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

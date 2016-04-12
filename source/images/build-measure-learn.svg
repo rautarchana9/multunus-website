@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="391px" height="310px" viewBox="0 0 391 310" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 3.6.1 (26313) - http://www.bohemiancoding.com/sketch -->
+    <title>3CFB888E-F22B-4866-9872-45CC403CB11E</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Home-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-Landscape-V2" transform="translate(-195.000000, -2881.000000)">
+            <g id="Our-Process" transform="translate(0.000000, 2662.000000)">
+                <g id="Group-16" transform="translate(194.000000, 81.000000)">
+                    <g id="Build-Measure-Learn" transform="translate(0.000000, 143.000000)">
+                        <g id="Group-22" transform="translate(46.000000, 0.000000)">
+                            <ellipse id="Oval-20" stroke="#E81E3A" stroke-width="10" cx="137.5" cy="137.328125" rx="137.5" ry="137.328125"></ellipse>
+                            <ellipse id="Oval-21" stroke="#F0F0F0" stroke-width="4" fill="#4A4A4A" cx="260.294118" cy="75.640625" rx="7.35294118" ry="7.34375"></ellipse>
+                            <ellipse id="Oval-21" stroke="#F0F0F0" stroke-width="4" fill="#4A4A4A" cx="14.7058824" cy="75.640625" rx="7.35294118" ry="7.34375"></ellipse>
+                            <ellipse id="Oval-21" stroke="#F0F0F0" stroke-width="4" fill="#4A4A4A" cx="137.5" cy="274.65625" rx="7.35294118" ry="7.34375"></ellipse>
+                        </g>
+                        <text id="Build" font-family="OpenSans-Light, Open Sans" font-size="19.6864564" font-weight="300" fill="#000000">
+                            <tspan x="0.2133549" y="75">Build</tspan>
+                        </text>
+                        <text id="Measure" font-family="OpenSans-Light, Open Sans" font-size="17.9179331" font-weight="300" fill="#000000">
+                            <tspan x="322.925296" y="72">Measure</tspan>
+                        </text>
+                        <text id="Learn" font-family="OpenSans-Light, Open Sans" font-size="18.6280448" font-weight="300" fill="#000000">
+                            <tspan x="160.055504" y="304">Learn</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,32 @@
+.footer {
+    background-color: #424242;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: rgba(255, 255, 255, 0.3);
+    ul, .follow-us, .contact-us {
+        padding: 0;
+        font-size: $font-size-medium;
+    }
+    ul {
+        list-style: none;
+        line-height: 1.8;
+    }
+    .follow-us, .contact-us {
+        margin-bottom: 5px;
+        span {
+            display: inline-block;
+            min-width: 90px;
+        }
+    }
+}
+
+.copyright {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #212121;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: $font-size-large;
+    .heart-icon {
+        color: #E5233F;
+    }
+}

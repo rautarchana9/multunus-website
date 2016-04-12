@@ -1,37 +1,16 @@
 @charset "utf-8";
 @import "normalize";
+@import "bootstrap-override";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,700,400,800,400italic,300italic");
+@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,400italic");
 
-$background-color: #F0F0F0;
-$header-bg-color: #FEFAFB;
-
-$font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$regular-font-size: 1em;
+//Common styles
+@import 'common';
 
 
-body {
-    background: $background-color;
-    font-family: $font-family;
-    font-size: $regular-font-size;
-}
-
-.no-padding {
-    padding: 0 !important;
-}
-
-.header-container {
-    position: absolute;
-    width: 100%;
-    top: 0;
-    z-index: 1;
-    .navbar-default .navbar-nav > li > a {
-        font-size: 1.3em;
-        padding-top: 23px;
-        padding-bottom: 22px;
-    }
-    .navbar-default .navbar-nav > li.active > a{
-        background: none;
-        color: #CE263D;
-    }
-}
+//Custom page styles
+@import 'index';
+@import 'header';
+@import 'footer';
