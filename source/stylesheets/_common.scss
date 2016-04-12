@@ -28,12 +28,8 @@ a {
     }
 }
 
-.btn.btn-muted {
-    background-color:  #f0f0f5;
-    border: solid 1px #f5f5f5;
-    border-radius: 2px;
-    padding: 15px;
-    color: $primary-grey;
+.full-width {
+    width: 100% !important;
 }
 
 .no-padding {
@@ -67,6 +63,37 @@ a {
     }
     .tile {
         margin-bottom: 30px;
+    }
+}
+
+//components
+
+.btn.btn-muted {
+    background-color:  #f0f0f5;
+    border: solid 1px #f5f5f5;
+    border-radius: 2px;
+    padding: 15px;
+    color: $primary-grey;
+}
+
+.btn.btn-primary {
+    font-size: $font-size-h3;
+    padding: 15px 50px;
+    border-radius: 2px;
+    border-color: $primary-red;
+    background-color: $primary-red;
+    &:hover, &:focus {
+                 border-color: $secondary-red;
+                 background-color: $secondary-red;
+    }
+}
+.get-in-touch-banner {
+    padding: 100px 0;
+    background-color: #ededed;
+    .need-help-msg {
+        margin-top: 15px;
+        font-size: $font-size-h3;
+        color: $primary-grey;
     }
 }
 
