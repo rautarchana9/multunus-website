@@ -73,4 +73,6 @@ configure :build do
                :user_agent => '*',
                :disallow =>  %w(/),
              }]
+  activate :asset_hash
+  activate :asset_host, host: '//d3s6qnjdf1sx4b.cloudfront.net'
 end
