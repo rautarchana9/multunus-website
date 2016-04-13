@@ -10,6 +10,8 @@
   width: percentage(1220px / 1280px);
   margin-top: 2%; 
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
   border-radius: 2px;
 
   .case-study-card {

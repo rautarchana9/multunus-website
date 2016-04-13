@@ -1,0 +1,78 @@
+.case-study-banner {
+  background:
+    linear-gradient(
+      rgba(29, 188, 224, 0.8),
+      rgba(29, 188, 224, 0.8)
+    ),
+    url(../images/cover-image2.jpg);
+    background-size: cover;
+  color: $primary-white;
+  padding: 11.9% 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+
+  ul{
+    margin-bottom: 0; 
+  }
+  .title {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .hash-tag {
+    color: $secondary-white;
+    font-size: $font-size-base;
+    text-transform: uppercase;
+    &:before {
+      padding-left: 5px;
+      content: "#";
+    }
+  }
+  p {
+    font-size: 28px;
+    line-height: 46px;
+    color: $secondary-white;
+    font-family: $secondary-font-family;
+  }
+  .visit-site-button {
+    color: $secondary-white;
+    margin-top: 48px;
+  }
+  .case-study-synopsis {
+    margin-top: 78px;
+  }
+}
+
+.case-study-summary {
+  p {
+    font-family: $secondary-font-family;
+    font-size: $font-size-medium;
+    color: $secondary-black;
+  }
+}
+
+.case-study-text {
+    font-size: $font-size-h3;
+    line-height: 40px;
+    color: $primary-grey;
+    font-family: $secondary-font-family;
+    margin-top: 24px;
+}
+
+.sub-heading {
+  font-size: 40px;
+  color: $primary-black;
+}
+
+.testimony {
+  .quote {
+    font-size: $font-size-h3;
+    color: $primary-grey;
+    font-family: $secondary-font-family;
+  }
+}
+
+.content-container {
+  width: percentage(780px / 1280px);
+  margin: auto;
+}
