@@ -73,6 +73,8 @@ configure :build do
                :user_agent => '*',
                :disallow =>  %w(/),
              }]
+  
+  ## #Fix: https://github.com/middleman/middleman/issues/1873
   activate :asset_hash
-  activate :asset_host, host: '//d3s6qnjdf1sx4b.cloudfront.net'
+  activate :asset_host, host: '//d3s6qnjdf1sx4b.cloudfront.net', rewrite_ignore: ["*.js"]
 end
