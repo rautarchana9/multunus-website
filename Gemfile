@@ -16,7 +16,7 @@ gem 'therubyracer'
 
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 
-
+gem 'middleman-robots'
 
 # For feed.xml.builder
 gem 'builder', '~> 3.2', '>= 3.2.2'
