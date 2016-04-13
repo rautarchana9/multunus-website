@@ -7,7 +7,11 @@
     url(../images/cover-image2.jpg);
     background-size: cover;
   color: $primary-white;
-  margin: 2%;
+  width: percentage(1220px / 1280px);
+  margin-top: 2%; 
+  -webkit-font-smoothing: antialiased;
+  border-radius: 2px;
+
   .case-study-card {
     padding: 11.9% 0;
 
