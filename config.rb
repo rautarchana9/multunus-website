@@ -71,6 +71,6 @@ configure :build do
   activate :robots, rules: [
              {
                :user_agent => '*',
-               :disallow =>  '/',
+               :disallow =>  %w(/),
              }]
 end
