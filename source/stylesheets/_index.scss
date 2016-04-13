@@ -11,7 +11,7 @@
         }
         .description {
             font-family: $secondary-font-family;
-            font-size: $font-size-h3;
+            @include normal-and-xs-property('font-size', $font-size-h3, $font-size-base);
             font-style: italic;
             margin: 25px;
         }
@@ -20,14 +20,14 @@
 
 .what-we-do {
     .tile {
-        img, p {
-            margin-bottom: 30px;
-        }
-        h3 {
+        @include normal-and-xs-property('border', none,  solid 1px rgba(0, 0, 0, 0.1));
+        padding: 30px 15px;
+        
+        img, p, h3 {
             margin-bottom: 15px;
         }
         img {
-            height: 72px;     
+            @include normal-and-xs-property('height', 72px, 60px);
         }
         p {
             font-size: $font-size-medium;
@@ -52,8 +52,11 @@
     p {
         margin-top: 16px;
         margin-bottom: 24px;
-        font-size: $font-size-h3;
+        @include normal-and-xs-property('font-size', $font-size-h3, $font-size-large);
         color: $primary-grey;
+    }
+    a {
+        margin-bottom: 24px;
     }
 }
 
@@ -63,7 +66,7 @@
             height: 320px;
         }
         p {
-            font-size: $font-size-h3;
+            @include normal-and-xs-property('font-size', $font-size-h3, $font-size-large);
             color: $secondary-black;
             padding-top: 35px;
             padding-bottom: 16px;
@@ -72,5 +75,10 @@
 }
 
 .our-thoughts {
-    
+    &.section .tile {
+        @include normal-and-xs-property('margin-bottom', 16px, 0);
+        .blog-tile {
+            margin-bottom: 8px;
+        }
+    }
 }

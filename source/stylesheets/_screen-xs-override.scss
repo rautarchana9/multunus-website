@@ -1,0 +1,36 @@
+@media(max-width: $screen-xs-min) {
+    h1 {
+        font-size: $font-size-h2;
+    }
+
+    h2 {
+        font-size: $font-size-h3;
+    }
+
+    h3 {
+        font-size: $font-size-h4;
+    }
+
+    h4 {
+        font-size: $font-size-h5;
+    }
+
+    h5 {
+        font-size: $font-size-h6;
+    }
+    
+    .container {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    .text-xs-left {
+        text-align: left;
+    }
+    .text-xs-center {
+        text-align: center;
+    }
+    .text-xs-right {
+        text-align: right;
+    }
+}
