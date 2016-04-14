@@ -11,9 +11,15 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
-
+  @media (max-width: 480px) {
+    h1 {
+      font-size: $font-size-h3;
+      line-height: 1.3em;
+    }
+  }
   ul{
     margin-bottom: 0; 
+    @include normal-and-xs-property('margin', 0, auto);
   }
   .title {
     margin-top: 0;
@@ -21,18 +27,21 @@
   }
   .hash-tag {
     color: $secondary-white;
-    font-size: $font-size-base;
+    // font-size: $font-size-base;
     text-transform: uppercase;
+    @include normal-and-xs-property('font-size', $font-size-base, $font-size-small);
     &:before {
       padding-left: 5px;
       content: "#";
     }
   }
   p {
-    font-size: 28px;
-    line-height: 46px;
+    font-size: 1em;
+    line-height: 1em;
     color: $secondary-white;
     font-family: $secondary-font-family;
+    font-size: 1.3em;
+    line-height: 1.6em;
   }
   .visit-site-button {
     color: $secondary-white;
@@ -59,14 +68,15 @@
 
 .case-study-text {
     font-size: $font-size-h3;
-    line-height: 40px;
+    line-height: 1.6em;
     color: $primary-grey;
     font-family: $secondary-font-family;
     margin-top: 24px;
-}
+    @include normal-and-xs-property('font-size', $font-size-h3, $font-size-large);
+  }
 
 .sub-heading {
-  font-size: 40px;
+  font-size: 2.5em;
   color: $primary-black;
 }
 
@@ -76,6 +86,7 @@
     font-size: $font-size-h3;
     color: $primary-grey;
     font-family: $secondary-font-family;
+    @include normal-and-xs-property('font-size', $font-size-h3, $font-size-large);
   }
 
   .client-image {
@@ -83,6 +94,7 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
+    @include normal-and-xs-property('margin', -80px 0 0px 42%, -80px 0 0px 30%);
     margin: -80px 0 0px 42%;
     padding: 10px;
     position: relative;
@@ -104,6 +116,6 @@
 }
 
 .content-container {
-  width: percentage(780px / 1280px);
+    @include normal-and-xs-property('width', percentage(780px / 1280px), percentage(280px / 320px));
   margin: auto;
 }
