@@ -67,10 +67,10 @@ a {
     & > .title {
         @include normal-and-xs-property('margin-bottom', 5%,  30px);
     }
-    &:nth-of-type(odd) {
+    &.section-striped:nth-of-type(odd) {
         background-color: $primary-white;
     }
-    &:nth-of-type(even) {
+    &.section-striped:nth-of-type(even) {
         background-color: $secondary-white;
     }
     .tile {
