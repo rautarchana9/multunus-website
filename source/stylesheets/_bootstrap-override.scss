@@ -16,3 +16,9 @@ $font-size-h5: $font-size-base; // 14px
 $font-size-h6: ceil(($font-size-base * 0.85)); // 12px 
 
 $navbar-height: 60px;
+
+$input-border-radius: 0;
+$input-border-radius-large: 0;
+$input-border-focus: #ccc;
+
+$form-group-margin-bottom: 24px;

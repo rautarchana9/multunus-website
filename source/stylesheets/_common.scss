@@ -78,6 +78,22 @@ a {
     }
 }
 
+.form-group {
+    &.required {
+        label:after {
+            margin-left: 5px;
+            content: '*';
+            color: $primary-red;
+        }
+    }
+    label {
+        color: $primary-black;
+        font-size: $font-size-medium;
+    }
+    textarea {
+        resize: none;
+    }
+}
 //components
 .btn:focus,.btn:active {
    outline: none !important;
