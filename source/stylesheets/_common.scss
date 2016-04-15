@@ -64,7 +64,7 @@ a {
 
 .section {
     padding: 5% 0;
-    .title {
+    & > .title {
         @include normal-and-xs-property('margin-bottom', 5%,  30px);
     }
     &:nth-of-type(odd) {
@@ -79,7 +79,9 @@ a {
 }
 
 //components
-
+.btn:focus,.btn:active {
+   outline: none !important;
+}
 .btn.btn-muted {
     background-color:  #f0f0f5;
     border: solid 1px #f5f5f5;
