@@ -90,22 +90,62 @@ a {
     color: $primary-grey;
 }
 
-.btn.btn-primary {
-    font-size: $font-size-h3;
-    padding: 15px 50px;
+.btn.btn-primary, .btn.btn-submit {
+    padding: 14px 50px;
     border-radius: 2px;
+    color: $primary-white;
     border-color: $primary-red;
     background-color: $primary-red;
-    &:hover, &:focus {
-                 border-color: $secondary-red;
-                 background-color: $secondary-red;
+    box-shadow: 0 4px 0 0 #bc1f3a;
+    margin-top: 0;
+    margin-bottom: 4px;
+    &:hover {
+                 margin-top: 2px;
+                 margin-bottom: 2px;
+                 box-shadow: 0 2px 0 0 #bc1f3a;
+                 border-color: $primary-red;
+                 background-color: $primary-red;
+                 
+             }
+    &:active {
+        margin-top: 4px;
+        margin-bottom: 0;
+        box-shadow: 0 0 0 0 #bc1f3a;
+        border-color: $primary-red;
+        background-color: $primary-red;
     }
 }
+.btn.btn-primary {
+    font-size: $font-size-h3;
+}
+.btn.btn-submit {
+    font-size: $font-size-medium;
+}
+
 .btn.btn-hollow {
     border: solid 1px #f5f5f5;
     font-size: $font-size-base;
     border-radius: 2px;
     background-color: transparent;
+}
+.main-banner {
+    background-color: $primary-grey; 
+    .title-container {
+        margin: 15% 0;
+        color: $primary-white;
+        .title {
+            line-height: 1.3em;
+            span {
+                display: block;
+            }
+        }
+        .description {
+            font-family: $secondary-font-family;
+            @include normal-and-xs-property('font-size', $font-size-h3, $font-size-base);
+            font-style: italic;
+            margin: 25px;
+        }
+    }
 }
 .get-in-touch-banner {
     @include normal-and-xs-property('padding', 100px 0, 20px 0 50px 0);

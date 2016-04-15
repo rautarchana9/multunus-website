@@ -1,21 +1,4 @@
 .what-we-do-banner {
-    background-color: $primary-grey; 
-    .title-container {
-        margin: 15% 0;
-        color: $primary-white;
-        .title {
-            line-height: 1.3em;
-            span {
-                display: block;
-            }
-        }
-        .description {
-            font-family: $secondary-font-family;
-            @include normal-and-xs-property('font-size', $font-size-h3, $font-size-base);
-            font-style: italic;
-            margin: 25px;
-        }
-    }
 }
 
 .what-we-do {
@@ -71,7 +54,7 @@
             padding-top: 35px;
             padding-bottom: 16px;
         }
-    }   
+    }
 }
 
 .our-thoughts {
