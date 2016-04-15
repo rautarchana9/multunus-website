@@ -17,17 +17,17 @@
       line-height: 1.3em;
     }
   }
-  ul{
-    margin-bottom: 0; 
-    @include normal-and-xs-property('margin', 0, auto);
-  }
   .title {
     margin-top: 0;
     margin-bottom: 0;
   }
+  .xs-extra-padding {
+    @media (max-width: 480px) {
+      margin-bottom: 14%;
+    }
+  }
   .hash-tag {
     color: $secondary-white;
-    // font-size: $font-size-base;
     text-transform: uppercase;
     @include normal-and-xs-property('font-size', $font-size-base, $font-size-small);
     &:before {
@@ -36,33 +36,41 @@
     }
   }
   p {
-    font-size: 1em;
-    line-height: 1em;
     color: $secondary-white;
     font-family: $secondary-font-family;
-    font-size: 1.3em;
+    @include normal-and-xs-property('font-size', 2.34em, 1.3em);
     line-height: 1.6em;
   }
   .visit-site-button {
     color: $secondary-white;
     margin-top: 48px;
+    padding: 13px 42px;
   }
   .case-study-synopsis {
+    text-align: start;
+    @include normal-and-xs-property('margin-top', 78px, 48px);
     margin-top: 78px;
   }
   .next-project {
     text-transform: uppercase;
     color: $primary-black;
-    margin-top: -9.23%;
+    @include normal-and-xs-property('margin-top', -9.23%, 13.1%);
+    @include normal-and-xs-property('margin-bottom', 9.24%, 2.24%);
     margin-bottom: 9.24%;
   }
 }
 
 .case-study-summary {
+  background-color: #ededed !important;
+
+  h3 {
+    font-size: 24px;
+  }
   p {
     font-family: $secondary-font-family;
     font-size: $font-size-medium;
     color: $secondary-black;
+    line-height: 1.5;
   }
 }
 
@@ -76,7 +84,7 @@
   }
 
 .sub-heading {
-  font-size: 2.5em;
+  @include normal-and-xs-property('font-size', 3.333em, 2em);
   color: $primary-black;
 }
 
