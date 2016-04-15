@@ -122,8 +122,3 @@
     text-align: center;
   }
 }
-
-.content-container {
-    @include normal-and-xs-property('width', percentage(780px / 1280px), percentage(280px / 320px));
-  margin: auto;
-}
