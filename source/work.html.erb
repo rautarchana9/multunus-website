@@ -5,6 +5,7 @@
   </div>
 
 <section>
+  <a href="/case-study.html">
   <div class="container case-study-element">
     <div class="col-sm-offset-1 col-sm-10 case-study-card">
       <ul class="list-inline">
@@ -15,6 +16,7 @@
     <h1 class="title font-weight-bold">EyzUp saves people from their smartphones</h1>
     </div>
   </div>
+  </a>
 
   <div class="container case-study-element">
     <div class="col-sm-offset-1 col-sm-10 case-study-card">
@@ -40,7 +42,4 @@
 </section>
 </section>
 
-<section class="section clearfix">
-  <div class="container-fluid">
-  </div>
-</section>
+<%= partial 'footer_banner', locals: { message: 'Need help on your project?', button_text: "Let's get in touch", button_styles: 'btn btn-primary with-pressed-effect' } %>
