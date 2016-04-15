@@ -106,35 +106,51 @@ a {
     color: $primary-grey;
 }
 
-.btn.btn-primary, .btn.btn-submit {
+.btn.btn-primary, .btn.btn-secondary, .btn.btn-submit {
+    min-width: 240px;
     padding: 14px 35px;
     border-radius: 2px;
     color: $primary-white;
     border-color: $primary-red;
     background-color: $primary-red;
+    &:hover, &:active {
+                 border-color: $primary-red;
+                 background-color: $primary-red;    
+             }
+}
+.btn.with-pressed-effect  {
     box-shadow: 0 4px 0 0 #bc1f3a;
     margin-top: 0;
     margin-bottom: 4px;
     &:hover {
-                 margin-top: 2px;
-                 margin-bottom: 2px;
-                 box-shadow: 0 2px 0 0 #bc1f3a;
-                 border-color: $primary-red;
-                 background-color: $primary-red;
-                 
-             }
+        margin-top: 2px;
+        margin-bottom: 2px;
+        box-shadow: 0 2px 0 0 #bc1f3a;
+    }
     &:active {
         margin-top: 4px;
         margin-bottom: 0;
         box-shadow: 0 0 0 0 #bc1f3a;
-        border-color: $primary-red;
-        background-color: $primary-red;
     }
 }
 .btn.btn-primary {
     font-size: $font-size-h3;
 }
-.btn.btn-submit {
+.btn.btn-secondary {
+    background-color: transparent;
+    color: $primary-red;
+    margin: 6px 0;
+    &:hover, &:active {
+                 background-color: transparent;
+             }
+    &:hover {
+        color: #ff213f;
+    }
+    &:active {
+        color: $secondary-red;
+    }
+}
+.btn.btn-submit, .btn.btn-secondary {
     font-size: $font-size-medium;
 }
 
