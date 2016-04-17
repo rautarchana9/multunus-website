@@ -94,6 +94,7 @@
     font-size: $font-size-h3;
     color: $primary-grey;
     font-family: $secondary-font-family;
+    text-align: center;
     @include normal-and-xs-property('font-size', $font-size-h3, $font-size-large);
   }
 
@@ -102,8 +103,9 @@
     height: 100px;
     width: 100px;
     border-radius: 50%;
-    @include normal-and-xs-property('margin', -80px 0 0px 42%, -80px 0 0px 30%);
-    margin: -80px 0 0px 42%;
+    margin-top: -43px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 10px;
     position: relative;
     background-color: #d8d8d8;
