@@ -21,8 +21,12 @@
             </div>
             <div class="col-md-6">
                 <h4 class="text-uppercase font-weight-extra-bold footer-title">Subscribe to our newsletter</h4>
-                <p class="follow-us font-weight-light"><span class="font-weight-bold">Follow us:</span> Facebook  • twitter  • LinkedIn  • Github</p>
-                <p class="contact-us font-weight-light"><span class="font-weight-bold">Contact:</span> info@multunus.com | +91 123 123 1234</p>
+                <p class="follow-us font-weight-light"><span class="font-weight-bold">Follow us:</span>
+                    <a class="muted-link" href="<%= data.info.social_media.facebook %>">Facebook</a>  •
+                    <a class="muted-link" href="<%= data.info.social_media.twitter %>">Twitter </a>  •
+                    <a class="muted-link" href="<%= data.info.social_media.linkedin %>">LinkedIn</a>  •
+                    <a class="muted-link" href="<%= data.info.social_media.github %>">Github  </a>  
+                <p class="contact-us font-weight-light"><span class="font-weight-bold">Contact:</span> <%= data.info.contact_info.email %> | <%= data.info.contact_info.phone %></p>
             </div>
         </div>
     </div>

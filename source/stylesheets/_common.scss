@@ -33,6 +33,9 @@ a {
                  color: $secondary-red;
                  text-decoration: none;
                  
+             }
+    &.muted-link {
+        color: rgba(255, 255, 255, 0.298039);
     }
 }
 
