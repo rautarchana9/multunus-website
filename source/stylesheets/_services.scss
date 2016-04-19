@@ -28,3 +28,29 @@
     line-height: 2;
   }
 }
+
+.status-question {
+  opacity: 0.8;
+  font-size: $font-size-h3;
+  line-height: 1.6;
+  color: rgba(21, 21, 21, 0.9);
+}
+
+.metrics-container {
+
+  background-color: #121212;
+  padding: 69px 0 54px 0;
+  .metrics-percent {
+    opacity: 0.8;
+    font-size: 4.67em;
+    line-height: 0.8;
+    color: #e81e3a;
+    margin-bottom: 24px;
+  }
+  .metrics-text {
+    opacity: 0.8;
+    font-size: $font-size-h3;
+    line-height: 1.6;
+    color: $secondary-white;
+  }
+}
