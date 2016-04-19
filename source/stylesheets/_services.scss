@@ -33,7 +33,13 @@
   opacity: 0.8;
   font-size: $font-size-h3;
   line-height: 1.6;
+  margin: 6.667% 0;
   color: rgba(21, 21, 21, 0.9);
+}
+
+.section-title {
+  margin-bottom: 6.667%;
+  margin-top: 0;
 }
 
 .metrics-container {
