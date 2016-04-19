@@ -8,55 +8,11 @@
 
 
 <section>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="case-study-card blue-card">
-                    <ul class="list-inline hidden-xs">
-                        <li class="hash-tag font-weight-bold"><a href="#">lorem</a></li>
-                        <li class="hash-tag font-weight-bold"><a href="#">dolor</a></li>
-                        <li class="hash-tag font-weight-bold"><a href="#">ipsum</a></li>
-                    </ul>
-                    <h1 class="title font-weight-bold"><a href="#">EyzUp saves people from their smartphones</a></h1>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="case-study-card orange-card">
-                    <ul class="list-inline hidden-xs">
-                        <li class="hash-tag font-weight-bold"><a href="#">lorem</a></li>
-                        <li class="hash-tag font-weight-bold"><a href="#">dolor</a></li>
-                        <li class="hash-tag font-weight-bold"><a href="#">ipsum</a></li>
-                    </ul>
-                    <h1 class="title font-weight-bold"><a href="#">EyzUp saves people from their smartphones</a></h1>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="case-study-card yellow-card">
-                    <ul class="list-inline hidden-xs">
-                        <li class="hash-tag font-weight-bold"><a href="#">lorem</a></li>
-                        <li class="hash-tag font-weight-bold"><a href="#">dolor</a></li>
-                        <li class="hash-tag font-weight-bold"><a href="#">ipsum</a></li>
-                    </ul>
-                    <h1 class="title font-weight-bold"><a href="#">EyzUp saves people from their smartphones</a></h1>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="case-study-card blue-card">
-                    <ul class="list-inline hidden-xs">
-                        <li class="hash-tag font-weight-bold"><a href="#">lorem</a></li>
-                        <li class="hash-tag font-weight-bold"><a href="#">dolor</a></li>
-                        <li class="hash-tag font-weight-bold"><a href="#">ipsum</a></li>
-                    </ul>
-                    <h1 class="title font-weight-bold"><a href="#">EyzUp saves people from their smartphones</a></h1>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+
+    <%= partial 'case_study_card', locals: { title_text: 'EyzUp saves people from their smartphones', hash_tags: ['lorem', 'dolor', 'ipsum']  } %>
+
+  </div>
 </section>
 
 <%= partial 'footer_banner', locals: { message: 'Need help on your project?', button_text: "Let's get in touch", button_styles: 'btn btn-primary with-pressed-effect' } %>
