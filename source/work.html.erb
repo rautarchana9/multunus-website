@@ -10,7 +10,11 @@
 <section>
   <div class="container">
 
-    <%= partial 'case_study_card', locals: { title_text: 'EyzUp saves people from their smartphones', hash_tags: ['lorem', 'dolor', 'ipsum']  } %>
+    <% data.work.case_studies.each do |case_study| %>
+
+      <%= partial 'case_study_card', locals: { title_text: case_study.title, hash_tags: case_study.hash_tags  } %>
+
+    <% end %>
 
   </div>
 </section>
