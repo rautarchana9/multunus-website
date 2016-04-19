@@ -25,9 +25,9 @@
                 <address class="info">
                     <p class="title text-uppercase font-weight-bold">Address</p>
                     <p>
-                        <span>Multunus Software Pvt Ltd,</span>
-                        <span>2nd floor, 1316/A, 9th Cross Rd, Phase 2, J P Nagar,</span>
-                        <span>Bengaluru, Karnataka 560078</span>
+                        <%  data.info.address.each do |line| %>
+                            <span><%= line %></span>
+                        <% end %>
                         <a class="with-arrow" href="#">Get directions</a>
                     </p>
                 </address>

@@ -7,3 +7,9 @@ social_media:
 contact_info:
         email: info@multunus.com
         phone: +91 123 123 1234
+
+address:
+        - Multunus Software Pvt Ltd,
+        - 2nd floor, 1316/A,
+        - 9th Cross Rd, Phase 2, J P Nagar,
+        - Bengaluru, Karnataka 560078
