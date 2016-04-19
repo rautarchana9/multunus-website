@@ -121,35 +121,20 @@
 
 <section class="section section-striped">
   <div class="container">
+    <h1 class="section-title text-center font-weight-light">Our Work</h1>
+
+    <% data.work.case_studies.first(2).each do |case_study| %>
+
+      <%= partial 'case_study_card', locals: { title_text: case_study.title, hash_tags: case_study.hash_tags  } %>
+
+    <% end %>
     <div class="row">
-      <div class="col-sm-12">
-        <h1 class="section-title text-center font-weight-light">Our Work</h1>
-        <div class="case-study-card blue-card">
-          <ul class="list-inline hidden-xs">
-            <li class="hash-tag font-weight-bold"><a href="#">lorem</a></li>
-            <li class="hash-tag font-weight-bold"><a href="#">dolor</a></li>
-            <li class="hash-tag font-weight-bold"><a href="#">ipsum</a></li>
-          </ul>
-          <h1 class="title font-weight-bold"><a href="#">EyzUp saves people from their smartphones</a></h1>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="case-study-card orange-card">
-          <ul class="list-inline hidden-xs">
-            <li class="hash-tag font-weight-bold"><a href="#">lorem</a></li>
-            <li class="hash-tag font-weight-bold"><a href="#">dolor</a></li>
-            <li class="hash-tag font-weight-bold"><a href="#">ipsum</a></li>
-          </ul>
-          <h1 class="title font-weight-bold"><a href="#">EyzUp saves people from their smartphones</a></h1>
-        </div>
-      </div>
-      <div class="col-xs-12">
-        <a class="btn btn-muted with-arrow text-center font-weight-bold full-width" href="#">See more case studies</a>
-      </div>
+    <div class="col-xs-12">
+      <a class="btn btn-muted with-arrow text-center font-weight-bold full-width" href="#">See more case studies</a>
     </div>
   </div>
+  </div>
+</div>
 </section>
 
 <%= partial 'our_thoughts' %>
