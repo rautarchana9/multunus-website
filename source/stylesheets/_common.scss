@@ -138,6 +138,7 @@ a {
 }
 .btn.btn-primary {
     font-size: $font-size-h3;
+        @include normal-and-xs-property('font-size', $font-size-h3, $font-size-medium);
 }
 .btn.btn-secondary {
     background-color: transparent;
