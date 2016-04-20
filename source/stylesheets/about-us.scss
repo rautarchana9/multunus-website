@@ -1,0 +1,17 @@
+.team-section {
+    background: $primary-red;
+    &>.title {
+        color: $primary-white;
+    }
+    .member {
+        .name {
+            color: $primary-white;
+        }
+        .role {
+            color: $primary-black;
+        }
+        .avatar {
+            border: 5px solid $secondary-red;
+        }
+    }
+}

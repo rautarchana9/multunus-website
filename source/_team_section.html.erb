@@ -4,9 +4,9 @@
         <div class="row">
             <%  data.team.each do |member| %>
                 <div class="member col-xs-6 col-sm-3 text-center">
-                    <%= image_tag member.image, class: 'img-circle' %>
-                    <h3><%= member.name %></h3>
-                    <h5 class="text-capitalize"><%= member.role %></h5>
+                    <%= image_tag member.image, class: 'avatar img-circle' %>
+                    <h3 class="name text-capitalize"><%= member.name %></h3>
+                    <h5 class="role text-capitalize"><%= member.role %></h5>
                     <div class="description">
                         <p><%= member.description %></p>
                         <a class="btn btn-socialmedia twitter" href="<%= member.social_media.twitter.link %>">

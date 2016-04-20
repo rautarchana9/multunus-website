@@ -1,13 +1,15 @@
 .team-widget {
     .member {
         margin-bottom: 25px;
+        cursor: pointer;
         .description {
             display: none;
         }
     }
     .member-description {
         font-size: $font-size-h3;
-        margin-top: 20px;
+        font-family: $secondary-font-family;
+        margin-top: 10px;
         margin-bottom: 25px;
         padding: 50px;
         background: $primary-white;
@@ -17,19 +19,19 @@
             position: absolute;
 	    width: 0;
 	    height: 0;
-	    border-left: 20px solid transparent;
-	    border-right: 20px solid transparent;
-	    border-bottom: 40px solid $secondary-red;
-            top: -40px;
+	    border-left: 30px solid transparent;
+	    border-right: 30px solid transparent;
+	    border-bottom: 30px solid $secondary-red;
+            top: -30px;
             .inner-triangle {
                 position: absolute;
 	        width: 0;
 	        height: 0;
-                border-left: 15px solid transparent;
-	        border-right: 15px solid transparent;
-	        border-bottom: 30px solid $primary-white;
-                left: -15px;
-                top: 11px;
+                border-left: 25px solid transparent;
+	        border-right: 25px solid transparent;
+	        border-bottom: 25px solid $primary-white;
+                left: -25px;
+                top: 6px;
             }
         }
     }
