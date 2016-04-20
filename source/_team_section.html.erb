@@ -1,0 +1,22 @@
+<section class="section team-section clearfix">
+    <h1 class="title text-center font-weight-light">Our Team</h1>
+    <div class="container team-widget">
+        <div class="row">
+            <%  data.team.each do |member| %>
+                <div class="member col-xs-6 col-sm-3 text-center">
+                    <%= image_tag member.image, class: 'img-circle' %>
+                    <h3><%= member.name %></h3>
+                    <h5 class="text-capitalize"><%= member.role %></h5>
+                    <div class="description">
+                        <p><%= member.description %></p>
+                        <a class="btn btn-socialmedia twitter" href="<%= member.social_media.twitter.link %>">
+                            <i class="fa fa-twitter" aria-hidden="true"></i><span class="hidden-xs">Follow <%= member.social_media.twitter.handle %></span>
+                        </a>
+                        <a class="btn btn-socialmedia github" href="<%= member.social_media.github.link %>"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a class="btn btn-socialmedia linkedin" href="<%= member.social_media.linkedin.link %>"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+    </div>
+</section>

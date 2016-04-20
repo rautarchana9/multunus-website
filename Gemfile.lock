@@ -39,6 +39,8 @@ GEM
     fastimage (1.8.1)
       addressable (~> 2.3, >= 2.3.5)
     ffi (1.9.10)
+    font-awesome-middleman (4.2.1)
+      middleman-core (>= 3.0.0)
     haml (4.0.7)
       tilt
     hamster (3.0.0)
@@ -146,6 +148,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap-sass
   builder (~> 3.2, >= 3.2.2)
+  font-awesome-middleman
   jquery-middleman
   middleman (~> 4.1, >= 4.1.6)
   middleman-blog (~> 4.0)

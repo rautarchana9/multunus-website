@@ -1,0 +1,59 @@
+.team-widget {
+    .member {
+        margin-bottom: 25px;
+        .description {
+            display: none;
+        }
+    }
+    .member-description {
+        font-size: $font-size-h3;
+        margin-top: 20px;
+        margin-bottom: 25px;
+        padding: 50px;
+        background: $primary-white;
+        border: solid 4px $secondary-red;
+        border-radius: 2px;
+        .triangle-up {
+            position: absolute;
+	    width: 0;
+	    height: 0;
+	    border-left: 20px solid transparent;
+	    border-right: 20px solid transparent;
+	    border-bottom: 40px solid $secondary-red;
+            top: -40px;
+            .inner-triangle {
+                position: absolute;
+	        width: 0;
+	        height: 0;
+                border-left: 15px solid transparent;
+	        border-right: 15px solid transparent;
+	        border-bottom: 30px solid $primary-white;
+                left: -15px;
+                top: 11px;
+            }
+        }
+    }
+    .btn.btn-socialmedia {
+        padding: 15px 20px;
+        margin-top: 20px;
+        margin-right: 10px;
+        font-size: $font-size-medium;
+        color: $primary-white;
+        border-radius: 2px;
+        min-width: 60px;
+        min-height: 55px;
+        &.twitter {
+            background:  #55acee;            
+            i {
+                @include normal-and-xs-property('padding-right', 16px, 0);
+            }
+            @include normal-and-xs-property('min-width', 260px, 60px);
+        }
+        &.github {
+            background: #333;
+        }
+        &.linkedin {
+            background:  #0077b5;
+        }
+    }
+}
