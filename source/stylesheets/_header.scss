@@ -13,6 +13,13 @@
     .nav.navbar-nav.navbar-right {
         li a {
             color: $primary-grey;
+            &:hover {
+                color: $primary-red;
+            }
+        }
+        li.active a {
+            color: $primary-black;
+            background: none;
         }
     }
 }

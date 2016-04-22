@@ -1,0 +1,13 @@
+nav_links:
+        - title: Our work
+          link: '/work.html'
+        - title: Services
+          link: '/services.html'
+        - title: Career
+          link: '#/career.html'
+        - title: Blog
+          link: '#/blog.html'
+        - title: About
+          link: '/about-us.html'
+        - title: Contact us
+          link: '/contact-us.html'

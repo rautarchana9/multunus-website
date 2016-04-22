@@ -19,12 +19,9 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="text-capitalize font-weight-bold"><a href="/work.html">Our Work</a></li>
-                        <li class="text-capitalize font-weight-bold active"><a href="/services.html">Services</a></li>
-                        <li class="text-capitalize font-weight-bold"><a href="#">Career</a></li>
-                        <li class="text-capitalize font-weight-bold"><a href="#">Blog</a></li>
-                        <li class="text-capitalize font-weight-bold"><a href="/about-us.html">About</a></li>
-                        <li class="text-capitalize font-weight-bold"><a href="/contact-us.html">Contact us</a></li>
+                        <%  data.links.nav_links.each do |link| %>
+                            <li class="item text-uppercase font-weight-semi-bold" data-active="<%= link.link %>"><a href="<%= link.link %>"><%= link.title %></a></li>
+                        <% end %>
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
