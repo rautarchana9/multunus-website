@@ -62,14 +62,14 @@
   padding: 69px 0 54px 0;
   .metrics-percent {
     opacity: 0.8;
-    font-size: 4.67em;
+    @include normal-and-xs-property('font-size', 4.67em, $font-size-h2);
     line-height: 0.8;
     color: #e81e3a;
     margin-bottom: 24px;
   }
   .metrics-text {
     opacity: 0.8;
-    font-size: $font-size-h3;
+    @include normal-and-xs-property('font-size', $font-size-h3, $font-size-large);
     line-height: 1.6;
     color: $secondary-white;
   }
