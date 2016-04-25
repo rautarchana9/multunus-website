@@ -2,7 +2,13 @@ nav_links:
         - title: Our work
           link: '/work.html'
         - title: Services
-          link: '/services.html'
+          link:
+                - title: Design
+                  link: '#/design'
+                - title: Development
+                  link: '#/development'
+                - title: Growth
+                  link: '#/growth'
         - title: Career
           link: '#/career.html'
         - title: Blog

@@ -16,10 +16,37 @@
             &:hover {
                 color: $primary-red;
             }
+            .caret {
+                margin-top: -3px;
+                margin-left: 4px;
+            }
         }
         li.active a {
             color: $primary-black;
             background: none;
+        }
+        
+        li.dropdown.open {
+            a {
+                background: none;
+                .caret {
+                    border-top: none;
+                    border-bottom: 4px dashed;
+                }
+            }
+        }
+        ul.dropdown-menu  {
+            left: 0;
+            border-bottom-left-radius: 2px;
+            border-bottom-right-radius: 2px;
+            border: none;
+            li a {
+                padding: 5px 20px;
+                font-weight: inherit;
+                &:hover, &:focus {
+                             background: none;
+                         }
+            }
         }
     }
 }

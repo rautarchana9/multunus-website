@@ -19,8 +19,23 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <%  data.links.nav_links.each do |link| %>
-                            <li class="item text-uppercase font-weight-semi-bold" data-active="<%= link.link %>"><a href="<%= link.link %>"><%= link.title %></a></li>
+                        <%  data.links.nav_links.each do |link_info| %>
+                            <% if link_info.link.respond_to? :each %>
+                                <li class="item text-uppercase font-weight-semi-bold dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <%= link_info.title %><span class="caret"></span>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <%  link_info.link.each do |sub_link_info| %>
+                                            <li class="item text-uppercase font-weight-semi-bold" data-active="<%= sub_link_info.link %>">
+                                                <a href="<%= sub_link_info.link %>"><%= sub_link_info.title %></a>
+                                            </li>
+                                        <%  end %>
+                                    </ul>
+                                </li>
+                            <% else %>
+                                <li class="item text-uppercase font-weight-semi-bold" data-active="<%= link_info.link %>"><a href="<%= link_info.link %>"><%= link_info.title %></a></li>
+                            <% end %>
                         <% end %>
                     </ul>
                 </div><!-- /.navbar-collapse -->
