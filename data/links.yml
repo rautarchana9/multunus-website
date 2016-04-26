@@ -4,11 +4,11 @@ nav_links:
         - title: Services
           link:
                 - title: Design
-                  link: '#/design'
+                  link: '/design.html'
                 - title: Development
-                  link: '#/development'
+                  link: '/development.html'
                 - title: Growth
-                  link: '#/growth'
+                  link: '/growth.html'
         - title: Career
           link: '#/career.html'
         - title: Blog
