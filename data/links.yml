@@ -9,10 +9,6 @@ nav_links:
                   link: '/development.html'
                 - title: Growth
                   link: '/growth.html'
-        - title: Career
-          link: '#/career.html'
-        - title: Blog
-          link: '#/blog.html'
         - title: About
           link: '/about-us.html'
         - title: Contact us
