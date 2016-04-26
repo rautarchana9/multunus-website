@@ -1,6 +1,16 @@
+<style type="text/css">
+  .partial-background-<%= case_study_background %> {
+    background:
+    linear-gradient(
+            <%= tint_color %>,
+            <%= tint_color %>
+        ),
+        url(../images/<%= case_study_background %>.jpg);
+  }
+</style>
 <div class="row">
   <div class="col-sm-12">
-    <div class="case-study-card orange-card">
+    <div class="case-study-card partial-background-<%= case_study_background %>">
       <ul class="list-inline hidden-xs">
         <% hash_tags.each do |hash_tag| %> 
           <li class="hash-tag font-weight-bold"><a href="/case-study.html"><%= hash_tag %></a></li>

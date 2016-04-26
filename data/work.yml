@@ -2,12 +2,21 @@ case_studies:
   - EyzUp:
     title: EyzUp saves people from their smartphones
     hash_tags: ['lorem', 'dolor', 'ipsum']
+    case_study_background: EyzUp
+    tint_color: rgba(255, 122, 0, 0.8)
   - bidPress:
     title: BidPress disrupts the custom T-shirt industry
     hash_tags: ['lorem', 'dolor', 'ipsum']
+    case_study_background: bidPress
+    tint_color: rgba(29, 188, 224, 0.8)
   - IntersectFund:
     title: IntersectFund makes thousands of small business happen
     hash_tags: ['lorem', 'dolor', 'ipsum']
+    case_study_background: IntersectFund
+    tint_color: rgba(204, 136, 0, 0.9)
   - VakilSearch:
     title: VakilSearch makes Legal Simple.
     hash_tags: ['lorem', 'dolor', 'ipsum']
+    case_study_background: vakilsearch
+    tint_color: rgba(196, 164, 21, 0.9)
+
