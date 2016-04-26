@@ -6,19 +6,19 @@
         <div class="col-sm-4 tile horizontal-tile text-center">
             <%= image_tag 'what-we-do-design.svg' %>
             <h3>Design</h3>
-            <p>Classifieds are usually the first place you think of when you are getting ready to make a purchase.</p>
+            <p>Create better experiences through design sprints, research and user testing.</p>
             <a class="font-weight-bold" href="#">Know more</a>
         </div>
         <div class="col-sm-4 tile horizontal-tile text-center">
             <%= image_tag 'what-we-do-engineering.svg' %>
-            <h3>Engineering</h3>
-            <p>Classifieds are usually the first place you think of when you are getting ready to make a purchase.</p>
+            <h3>Development</h3>
+            <p>Faster and better web and mobile development with lean thinking and continuous delivery.</p>
             <a class="font-weight-bold" href="#">Know more</a>
         </div>
         <div class="col-sm-4 tile text-center">
             <%= image_tag 'what-we-do-growth.svg' %>
             <h3>Growth</h3>
-            <p>Classifieds are usually the first place you think of when you are getting ready to make a purchase.</p>
+            <p>Widen your reach, acquire more customers and increase revenue through growth hacking.</p>
             <a class="font-weight-bold" href="#">Know more</a>
         </div>
     </div>
@@ -27,29 +27,9 @@
 <section class="section section-striped our-work clearfix">
     <h1 class="title text-center font-weight-light">Our Work</h1>
     <div class="container">
-        <div class="row tile">
-            <div class="col-sm-6 text-center">
-                <%= image_tag 'img1.jpg', class: 'img-responsive text-xs-center'%>
-            </div>
-            <div class="col-sm-6 text-left">
-                <h2 class="text-capitalize text-xs-center">Research In Advertising</h2>
-                <p class="font-weight-light text-xs-center">There are several ways people can make money online. From selling products to advertising.</p>
-                <a class="font-weight-bold text-xs-center inline-block full-width" href="#">Read More</a>
-            </div>
-        </div>
-        <div class="row tile">
-            <div class="col-sm-6 col-sm-push-6 text-center">
-                <%= image_tag 'img1.jpg', class: 'img-responsive'%>
-            </div>
-            <div class="col-sm-6 col-sm-pull-6 text-left">
-                <h2 class="text-capitalize text-xs-center">Bryce Canyon Travel Destination</h2>
-                <p class="font-weight-light text-xs-center">Learn how to improve your playing quality and even overall understanding of online gaming and how you perform while playing online.</p>
-                <a class="font-weight-bold text-xs-center inline-block full-width" href="#">Read More</a>
-            </div>
-        </div>
-        <div class="row">
-            <a class="col-xs-12 btn btn-muted with-arrow text-center font-weight-bold" href="#">See more case studies</a>
-        </div>
+        <% data.work.case_studies.each do |case_study| %>
+            <%= partial 'case_study_card', locals: { title_text: case_study.title, hash_tags: case_study.hash_tags  } %>
+        <% end %>
     </div>
 </section>
 
@@ -61,7 +41,7 @@
                 <%= image_tag 'build-measure-learn.svg', class: 'img-responsive text-xs-center' %>
             </div>
             <div class="col-sm-6">
-                <p class="text-xs-center">The preservation of human life is the ultimate value, a pillar of ethics and the foundation of all morality. This held true in most cultures and societies throughout history.</p>
+                <p class="text-xs-center">We are an agile company, working in small teams focused on driving business outcomes. Lean startup methods and design sprints helps us learn fast. Pair programming and continuous delivery helps are write quality code and make it available to users faster. </p>
                 <a class="font-weight-bold text-xs-center inline-block full-width">Read our playbook</a>
             </div>
         </div>
