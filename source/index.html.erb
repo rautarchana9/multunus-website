@@ -28,7 +28,7 @@
     <h1 class="title text-center font-weight-light">Our Work</h1>
     <div class="container">
         <% data.work.case_studies.each do |case_study| %>
-            <%= partial 'case_study_card', locals: { title_text: case_study.title, hash_tags: case_study.hash_tags, case_study_background: case_study.case_study_background, tint_color: case_study.tint_color } %>
+      <%= partial 'case_study_card', locals: { title_text: case_study.title, hash_tags: case_study.hash_tags, case_study_background: case_study.case_study_background, tint_color: case_study.tint_color, link: case_study.link   } %>
         <% end %>
     </div>
 </section>
