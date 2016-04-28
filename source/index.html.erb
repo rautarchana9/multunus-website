@@ -1,51 +1,51 @@
 <%= partial 'main_banner', locals: { page: 'contact-us', title:  "We design, engineer & grow <span>your product</span>", description:  "9 of 10 startups fail. We'll help you be the one that build a great brand."} %>
 
 <section class="section what-we-do section-striped clearfix">
-    <h1 class="title text-center font-weight-light">What we do</h1>
-    <div class="container tile-container">
-        <div class="col-sm-4 tile horizontal-tile text-center">
-            <%= image_tag 'what-we-do-design.svg' %>
-            <h3>Design</h3>
-            <p>Use design sprints to validate ideas while creating a great user experience.</p>
-            <a class="font-weight-bold" href="#">Know more</a>
-        </div>
-        <div class="col-sm-4 tile horizontal-tile text-center">
-            <%= image_tag 'what-we-do-engineering.svg' %>
-            <h3>Development</h3>
-            <p>Build quality products predictably and release frequently to get faster feedback.</p>
-            <a class="font-weight-bold" href="#">Know more</a>
-        </div>
-        <div class="col-sm-4 tile text-center">
-            <%= image_tag 'what-we-do-growth.svg' %>
-            <h3>Growth</h3>
-            <p>Acquire more customers and increase revenue through growth hacking.</p>
-            <a class="font-weight-bold" href="#">Know more</a>
-        </div>
+  <h1 class="title text-center font-weight-light">What we do</h1>
+  <div class="container tile-container">
+    <div class="col-sm-4 tile horizontal-tile text-center">
+      <%= image_tag 'what-we-do-design.svg' %>
+      <h3>Design</h3>
+      <p>Use design sprints to validate ideas while creating a great user experience.</p>
+      <a class="font-weight-bold" href="#">Know more</a>
     </div>
+    <div class="col-sm-4 tile horizontal-tile text-center">
+      <%= image_tag 'what-we-do-engineering.svg' %>
+      <h3>Development</h3>
+      <p>Build quality products predictably and release frequently to get faster feedback.</p>
+      <a class="font-weight-bold" href="#">Know more</a>
+    </div>
+    <div class="col-sm-4 tile text-center">
+      <%= image_tag 'what-we-do-growth.svg' %>
+      <h3>Growth</h3>
+      <p>Acquire more customers and increase revenue through growth hacking.</p>
+      <a class="font-weight-bold" href="#">Know more</a>
+    </div>
+  </div>
 </section>
 
 <section class="section section-striped our-work clearfix">
-    <h1 class="title text-center font-weight-light">Our Work</h1>
-    <div class="container">
-        <% data.work.case_studies.each do |case_study| %>
+  <h1 class="title text-center font-weight-light">Our Work</h1>
+  <div class="container">
+    <% data.work.case_studies.each do |case_study| %>
       <%= partial 'case_study_card', locals: { title_text: case_study.title, hash_tags: case_study.hash_tags, case_study_background: case_study.case_study_background, tint_color: case_study.tint_color, link: case_study.link   } %>
-        <% end %>
-    </div>
+    <% end %>
+  </div>
 </section>
 
 <section class="section section-striped our-process clearfix">
-    <h1 class="title text-center font-weight-light">Our Process</h1>
-    <div class="container">
-        <div class="row tile">
-            <div class="col-sm-6">
-                <%= image_tag 'build-measure-learn.svg', class: 'img-responsive text-xs-center' %>
-            </div>
-            <div class="col-sm-6">
-                <p class="text-xs-center">We are an agile company, working in small teams focused on driving business outcomes. Lean startup methods and design sprints helps us learn fast. Pair programming and continuous delivery helps are write quality code predictibly and sustainably.</p>
-                <a class="font-weight-bold text-xs-center inline-block full-width">Read our playbook</a>
-            </div>
-        </div>
+  <h1 class="title text-center font-weight-light">Our Process</h1>
+  <div class="container">
+    <div class="row tile">
+      <div class="col-sm-6">
+        <%= image_tag 'build-measure-learn.svg', class: 'img-responsive text-xs-center' %>
+      </div>
+      <div class="col-sm-6">
+        <p class="text-xs-center">We are an agile company, working in small teams focused on driving business outcomes. Lean startup methods and design sprints helps us learn fast. Pair programming and continuous delivery helps are write quality code predictibly and sustainably.</p>
+        <a class="font-weight-bold text-xs-center inline-block full-width">Read our playbook</a>
+      </div>
     </div>
+  </div>
 </section>
 
 <%= partial 'our_thoughts' %>

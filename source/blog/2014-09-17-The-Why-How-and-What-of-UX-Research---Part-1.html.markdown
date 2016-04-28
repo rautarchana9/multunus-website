@@ -5,6 +5,7 @@ tags:
 - cap-manishrc
 - design
 - lean-ux
+- featured
 ---
 
 >Whether knowingly or unknowingly, you've used qualitative feedback in the past. After reading this article, you will do it 

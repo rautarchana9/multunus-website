@@ -7,6 +7,7 @@ tags:
 - continuous-delivery
 - process
 - technology
+- featured
 ---
 
 As mentioned in an 

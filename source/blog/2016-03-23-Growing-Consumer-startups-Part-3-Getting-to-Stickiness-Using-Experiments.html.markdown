@@ -4,6 +4,7 @@ date: '2016-03-23 17:15:44'
 tags:
 - cap-karthik
 - process
+- featured
 ---
 
 In this third and final part of the series, we dive into the details of performing experiments to cross the Stickiness stage in a Consumer Startup.

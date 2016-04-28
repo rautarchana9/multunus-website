@@ -6,6 +6,7 @@ tags:
 - javascript
 - react
 - technology
+- featured
 ---
 
 >React has made working on frontend fun again.

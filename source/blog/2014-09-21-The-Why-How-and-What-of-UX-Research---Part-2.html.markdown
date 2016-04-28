@@ -6,6 +6,7 @@ tags:
 - design
 - lean-ux
 - ux
+- featured
 ---
 
 This is the Part II in the series 

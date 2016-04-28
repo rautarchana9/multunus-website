@@ -4,6 +4,7 @@ date: '2016-03-23 17:16:30'
 tags:
 - cap-vaidy
 - process
+- featured
 ---
 
 In this post, we dive into the gory details of performing experiments to cross the Pre-Empathy stage in a Consumer Startup.

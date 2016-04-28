@@ -5,6 +5,7 @@ date: '2016-03-23 17:17:02'
 tags:
 - cap-vaidy
 - process
+- featured
 ---
 
 You’ve got an idea for a consumer product. And you’re raring to go build it.

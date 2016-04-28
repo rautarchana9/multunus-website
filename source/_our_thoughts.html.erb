@@ -1,49 +1,46 @@
 <section class="section section-striped our-thoughts clearfix">
-    <h1 class="title text-center font-weight-light">Our thoughts</h1>
-    <div class="container">
-        <div class="row tile">
-            <div class="col-sm-6">
-                <div class="blog-tile">
-                    <h6 class="text-uppercase text-left category-title font-weight-bold">Business</h6>
-                    <h3 class="title font-weight-bold">5 Tips For Offshore Software Development</h3>
-                    <%= with_ellipsised_text tag: 'p', text: 'With MySpace becoming more popular every day, there is the constant need to be different. There are many more lines followed by this but hidden', length: 140, options: {class: 'short-description'}  %>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="blog-tile">
-                    <h6 class="text-uppercase text-left category-title font-weight-bold">Marketing</h6>
-                    <h3 class="title font-weight-bold">How To Boost Your Traffic Of Your Blog And Destroy The Competition</h3>
-                    <%= with_ellipsised_text tag: 'p', text: 'With MySpace becoming more popular every day, there is the constant need to be different. There are many more lines followed by this but hidden', length: 140, options: {class: 'short-description'}  %>
-                </div>
-            </div>
+  <h1 class="title text-center font-weight-light">Our thoughts</h1>
+
+  <div class="container">
+
+    <% featured_articles = blog.articles.select {|a| a.tags.include? 'featured'} %>
+
+    <div class="row tile">
+      <% featured_articles[0,2].each do |article| %>
+          <div class="col-sm-6">
+            <div class="blog-tile">
+              <h3 class="title font-weight-bold">
+                <a href="<%= article.url %>"><%= article.title %></a>
+                <%# <time><%= article.date.strftime('%b %e %Y') %1></time> %>
+              </h3>
+              <%= with_ellipsised_text tag: 'p', text: article.summary , length: 140, options: {class: 'short-description'}  %>
+
+              <a href="<%= article.url %>">Read more</a>
+          </div>
         </div>
-        <div class="row tile">
-            <div class="col-sm-4">
-                <div class="blog-tile">
-                    <h6 class="text-uppercase text-left category-title font-weight-bold">Design</h6>
-                    <h4 class="title font-weight-bold">A Starter Guide To Learning Design</h4>
-                    <p class="short-description">With MySpace becoming more popular every day, there is the constant need to be different.</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="blog-tile">
-                    <h6 class="text-uppercase text-left category-title font-weight-bold">Technology</h6>
-                    <h4 class="title font-weight-bold">Merge Hells? Feature Toggles to the rescue!</h4>
-                    <p class="short-description">With MySpace becoming more popular every day, there is the constant need to be different.</p>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="blog-tile">
-                    <h6 class="text-uppercase text-left category-title font-weight-bold">Design</h6>
-                    <h4 class="title font-weight-bold">Growing an early stage startups</h4>
-                    <p class="short-description">With MySpace becoming more popular every day, there is the constant need to be different.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 ">
-                <a class="btn btn-muted with-arrow text-center font-weight-bold full-width" href="#">See more case studies</a>
-            </div>
-        </div>
+      <% end %>
     </div>
-</section>
+
+    <div class="row tile">
+      <% featured_articles[2,3].each do |article| %>
+          <div class="col-sm-4">
+            <div class="blog-tile">
+              <h3 class="title font-weight-bold">
+                <a href="<%= article.url %>"><%= article.title %></a>
+                <%# <time><%= article.date.strftime('%b %e %Y') %1></time> %>
+              </h3>
+              <%= with_ellipsised_text tag: 'p', text: article.summary , length: 140, options: {class: 'short-description'}  %>
+
+              <a href="<%= article.url %>">Read more</a>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+      <div class="row">
+        <div class="col-xs-12 ">
+          <a class="btn btn-muted with-arrow text-center font-weight-bold full-width" href="#">See more case studies</a>
+        </div>
+      </div>
+    </div>
+  </section>
