@@ -7,15 +7,12 @@
 
     <div class="row tile">
       <% featured_articles[0,2].each do |article| %>
-          <div class="col-sm-6">
-            <div class="blog-tile">
-              <h3 class="title font-weight-bold">
-                <a href="<%= article.url %>"><%= article.title %></a>
-                <%# <time><%= article.date.strftime('%b %e %Y') %1></time> %>
-              </h3>
-              <%= with_ellipsised_text tag: 'p', text: article.summary , length: 140, options: {class: 'short-description'}  %>
-
-              <a href="<%= article.url %>">Read more</a>
+        <div class="col-sm-6">
+          <div class="blog-tile">
+            <h3 class="title font-weight-bold">
+              <a href="<%= article.url %>"><%= article.title %></a>
+            </h3>
+            <%= with_ellipsised_text tag: 'p', text: article.summary , length: 180, options: {class: 'short-description'}  %>
           </div>
         </div>
       <% end %>
@@ -23,24 +20,21 @@
 
     <div class="row tile">
       <% featured_articles[2,3].each do |article| %>
-          <div class="col-sm-4">
-            <div class="blog-tile">
-              <h3 class="title font-weight-bold">
-                <a href="<%= article.url %>"><%= article.title %></a>
-                <%# <time><%= article.date.strftime('%b %e %Y') %1></time> %>
-              </h3>
-              <%= with_ellipsised_text tag: 'p', text: article.summary , length: 140, options: {class: 'short-description'}  %>
-
-              <a href="<%= article.url %>">Read more</a>
+        <div class="col-sm-4">
+          <div class="blog-tile">
+            <h4 class="title font-weight-bold">
+              <a href="<%= article.url %>"><%= article.title %></a>
+            </h4>
+            <%= with_ellipsised_text tag: 'p', text: article.summary , length: 180, options: {class: 'short-description'}  %>
           </div>
         </div>
       <% end %>
     </div>
 
-      <div class="row">
-        <div class="col-xs-12 ">
-          <a class="btn btn-muted with-arrow text-center font-weight-bold full-width" href="#">See more case studies</a>
-        </div>
+    <div class="row">
+      <div class="col-xs-12 ">
+        <a class="btn btn-muted with-arrow text-center font-weight-bold full-width" href="#">See more case studies</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
