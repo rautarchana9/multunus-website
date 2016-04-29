@@ -9,7 +9,7 @@ tags:
 - featured
 ---
 
-Summary: This is just some placeholder data to demonstrate how article summary works for middleman blog
+Summary: This is just some placeholder data to demonstrate how article summary works for middleman blog  
 READMORE
 >React has made working on frontend fun again.
 
