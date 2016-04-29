@@ -7,6 +7,8 @@ tags:
 - featured
 ---
 
+Summary: This is just some placeholder data to demonstrate how article summary works for middleman blog
+READMORE
 In this post, we dive into the gory details of performing experiments to cross the Pre-Empathy stage in a Consumer Startup.
 
 [If that makes no sense to you, read 

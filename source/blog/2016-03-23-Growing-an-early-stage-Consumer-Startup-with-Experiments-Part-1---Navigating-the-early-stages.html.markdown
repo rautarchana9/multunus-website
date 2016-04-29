@@ -8,6 +8,8 @@ tags:
 - featured
 ---
 
+Summary: This is just some placeholder data to demonstrate how article summary works for middleman blog
+READMORE
 You’ve got an idea for a consumer product. And you’re raring to go build it.
 
 But you’ve also heard about the 

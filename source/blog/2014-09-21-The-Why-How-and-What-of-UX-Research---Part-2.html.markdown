@@ -9,6 +9,8 @@ tags:
 - featured
 ---
 
+Summary: This is just some placeholder data to demonstrate how article summary works for middleman blog
+READMORE
 This is the Part II in the series 
 [The Why, How and What of UX Research](www.multunus.com/blog/2014/09/why-how-and-what-of-ux-research-part-1/).
 
