@@ -1,15 +1,15 @@
 nav_links:
         - title: Our work
-          link: '/work.html'
+          link: '/work'
         - title: Services
           link:
                 - title: Design
-                  link: '/design.html'
+                  link: '/design'
                 - title: Development
-                  link: '/development.html'
+                  link: '/development'
                 - title: Growth
-                  link: '/growth.html'
+                  link: '/growth'
         - title: About
-          link: '/about-us.html'
+          link: '/about-us'
         - title: Contact us
-          link: '/contact-us.html'
+          link: '/contact-us'

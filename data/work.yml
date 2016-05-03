@@ -4,23 +4,23 @@ case_studies:
     hash_tags: ['lorem', 'dolor', 'ipsum']
     case_study_background: EyzUp
     tint_color: rgba(255, 122, 0, 0.8)
-    link: "/eyzup.html"
+    link: "case-studies/eyzup"
   - bidPress:
     title: BidPress disrupts the custom T-shirt industry
     hash_tags: ['lorem', 'dolor', 'ipsum']
     case_study_background: bidPress
     tint_color: rgba(29, 188, 224, 0.8)
-    link: "/bidpress.html"
+    link: "case-studies/bidpress"
   - IntersectFund:
     title: IntersectFund makes thousands of small business happen
     hash_tags: ['lorem', 'dolor', 'ipsum']
     case_study_background: IntersectFund
     tint_color: rgba(204, 136, 0, 0.9)
-    link: "/if.html"
+    link: "case-studies/if"
   - VakilSearch:
     title: VakilSearch makes Legal Simple.
     hash_tags: ['lorem', 'dolor', 'ipsum']
     case_study_background: vakilsearch
     tint_color: rgba(196, 164, 21, 0.9)
-    link: "/vakilsearch.html"
+    link: "case-studies/vakilsearch"
 
