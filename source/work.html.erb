@@ -12,7 +12,7 @@
 
     <% data.work.case_studies.each do |case_study| %>
 
-      <%= partial 'case_study_card', locals: { title_text: case_study.title, hash_tags: case_study.hash_tags, case_study_background: case_study.case_study_background, tint_color: case_study.tint_color, link: case_study.link   } %>
+      <%= partial 'case_study_card', locals: { case_study: case_study } %>
 
     <% end %>
 
