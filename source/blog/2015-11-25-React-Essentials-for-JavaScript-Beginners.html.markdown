@@ -1,6 +1,7 @@
 ---
 title: React Essentials for JavaScript Beginners
 date: '2015-11-25 16:27:05'
+synopsis: React is awesome is the only thing I wanna say
 tags:
 - cap-peter-l
 - javascript
@@ -9,7 +10,6 @@ tags:
 - featured
 ---
 
-Summary: This is just some placeholder data to demonstrate how article summary works for middleman blog  
 READMORE
 >React has made working on frontend fun again.
 

@@ -1,14 +1,13 @@
 ---
 title: 'Growing Consumer startups [Part 2]: Getting to Empathy Using Experiments'
 date: '2016-03-23 17:16:30'
+synopsis: 'Growing Consumer startups with experiment returns'
 tags:
 - cap-vaidy
 - process
 - featured
 ---
 
-Summary: This is just some placeholder data to demonstrate how article summary works for middleman blog
-READMORE
 In this post, we dive into the gory details of performing experiments to cross the Pre-Empathy stage in a Consumer Startup.
 
 [If that makes no sense to you, read 

@@ -2,14 +2,13 @@
 title: Growing an early stage Consumer Startup with Experiments [Part 1] - Navigating
   the early stages
 date: '2016-03-23 17:17:02'
+synopsis: 'This is just the beginning of a 3 blog post series so we should come up with a better synopsis'
 tags:
 - cap-vaidy
 - process
 - featured
 ---
 
-Summary: This is just some placeholder data to demonstrate how article summary works for middleman blog
-READMORE
 You’ve got an idea for a consumer product. And you’re raring to go build it.
 
 But you’ve also heard about the 

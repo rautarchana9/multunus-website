@@ -12,7 +12,7 @@
             <h3 class="title font-weight-bold">
               <a href="<%= article.url %>"><%= article.title %></a>
             </h3>
-            <%= with_ellipsised_text tag: 'p', text: article.summary , length: 180, options: {class: 'short-description'}  %>
+            <%= with_ellipsised_text tag: 'p', text: article.data.synopsis , length: 180, options: {class: 'short-description'}  %>
           </div>
         </div>
       <% end %>
@@ -25,7 +25,7 @@
             <h4 class="title font-weight-bold">
               <a href="<%= article.url %>"><%= article.title %></a>
             </h4>
-            <%= with_ellipsised_text tag: 'p', text: article.summary , length: 180, options: {class: 'short-description'}  %>
+            <%= with_ellipsised_text tag: 'p', text: article.data.synopsis , length: 180, options: {class: 'short-description'}  %>
           </div>
         </div>
       <% end %>

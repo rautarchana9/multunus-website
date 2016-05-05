@@ -1,6 +1,7 @@
 ---
 title: The Why, How and What of UX Research - Part 1
 date: '2014-09-17 12:29:05'
+synopsis: 'What really is UX?'
 tags:
 - cap-manishrc
 - design

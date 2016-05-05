@@ -1,14 +1,13 @@
 ---
 title: 'Growing Consumer startups [Part 3]: Getting to Stickiness Using Experiments'
 date: '2016-03-23 17:15:44'
+synopsis: 'Last installlment in Growing consumer startups series'
 tags:
 - cap-karthik
 - process
 - featured
 ---
 
-Summary: This is just some placeholder data to demonstrate how article summary works for middleman blog
-READMORE
 In this third and final part of the series, we dive into the details of performing experiments to cross the Stickiness stage in a Consumer Startup.
 
 [If you need more context, please start at 
