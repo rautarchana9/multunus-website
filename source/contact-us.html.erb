@@ -1,5 +1,6 @@
 <%= partial 'main_banner', locals: { page: 'contact-us', title:  "Let's talk", description: nil } %>
 
+      <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 <section class="section section-striped">
     <div class="container">
         <div class="row">
@@ -18,7 +19,7 @@
                         <textarea class="form-control input-lg" id="InputHelp" placeholder="" rows="3"></textarea>
                     </div>
                     
-                    <button type="submit" class="btn btn-submit with-pressed-effect text-uppercase full-width">Submit</button>
+                    <button id="contact-button" type="submit" class="btn btn-submit with-pressed-effect text-uppercase full-width">Submit</button>
                 </form>
             </div>
             <div class="col-sm-6 contact-info-container">
