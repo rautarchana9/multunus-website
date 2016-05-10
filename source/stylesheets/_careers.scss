@@ -1,0 +1,29 @@
+.perk {
+  .perk {
+    margin: 50px 0 50px 0;
+    .perk-title {
+      margin-top: 0;
+      color: $primary-grey
+    }
+    .perk-description {
+      font-size: $font-size-medium;
+      color: $secondary-grey
+    }
+  }
+}
+
+.position-listing {
+  height: 200px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  padding: 5px;
+
+  h3 {
+    line-height: 2.3em;
+    font-size: $font-size-h3;
+  }
+  p{
+    font-size: $font-size-medium;
+  }
+}
+
