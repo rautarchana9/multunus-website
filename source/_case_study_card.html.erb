@@ -2,21 +2,23 @@
   .partial-background-<%= case_study.case_study_background %> {
     background:
     linear-gradient(
-            <%= case_study.tint_color %>,
-            <%= case_study.tint_color %>
-        ),
-        url(../images/<%= case_study.case_study_background %>.jpg);
+    <%= case_study.tint_color %>,
+    <%= case_study.tint_color %>
+    ),
+    url(../images/<%= case_study.case_study_background %>.jpg);
   }
 </style>
 <div class="row">
   <div class="col-sm-12">
     <div class="case-study-card partial-background-<%= case_study.case_study_background %>">
-      <ul class="list-inline hidden-xs">
-        <% case_study.hash_tags.each do |hash_tag| %> 
-          <li class="hash-tag font-weight-bold"><a href="/case-study.html"><%= hash_tag %></a></li>
-        <% end %>
-      </ul>
-      <h1 class="title font-weight-bold"><a href="<%= case_study.link %>"><%= case_study.title %></a></h1>
+      <div class="case-study-card-content">
+        <ul class="list-inline hidden-xs">
+          <% case_study.hash_tags.each do |hash_tag| %> 
+            <li class="hash-tag font-weight-bold"><a href="/case-study.html"><%= hash_tag %></a></li>
+          <% end %>
+        </ul>
+        <h1 class="title font-weight-bold"><a href="<%= case_study.link %>"><%= case_study.title %></a></h1>
+      </div>
     </div>
   </div>
 </div>
