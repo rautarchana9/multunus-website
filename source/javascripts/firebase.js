@@ -3,11 +3,11 @@ $(function (){
 
   $('#contact-button').click(function(e){
     e.preventDefault();
-    var myDataRef = new Firebase('http://incandescent-torch-4645.firebaseIO.com');
+    var contactUsRef = new Firebase('http://brilliant-heat-1244.firebaseIO.com/contact_us');
     var name = $('#InputName').val();
     var email = $('#InputEmail').val();
     var message = $('#InputHelp').val();
-    myDataRef.push({name: name, email: email, message: message});
+    contactUsRef.push({name: name, email: email, message: message});
     $('#InputName').val('');
   });
 
