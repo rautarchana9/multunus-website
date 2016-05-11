@@ -1,51 +1,54 @@
 <%= partial 'main_banner', locals: { page: 'contact-us', title:  "Let's talk", description: nil } %>
 
-      <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
 <section class="section section-striped">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <form>
-                    <div class="form-group required">
-                        <label for="InputName">Name</label>
-                        <input type="text" class="form-control input-lg" id="InputName" placeholder="Name">
-                    </div>
-                    <div class="form-group required">
-                        <label for="InputEmail">Email</label>
-                        <input type="email" class="form-control input-lg" id="InputEmail" placeholder="Email">
-                    </div>
-                    <div class="form-group required">
-                        <label for="InputHelp">How can we help you?</label>
-                        <textarea class="form-control input-lg" id="InputHelp" placeholder="" rows="3"></textarea>
-                    </div>
-                    
-                    <button id="contact-button" type="submit" class="btn btn-submit with-pressed-effect text-uppercase full-width">Submit</button>
-                </form>
-            </div>
-            <div class="col-sm-6 contact-info-container">
-                <address class="info">
-                    <p class="title text-uppercase font-weight-bold">Address</p>
-                    <p>
-                        <%  data.info.address.each do |line| %>
-                            <span><%= line %></span>
-                        <% end %>
-                        <a class="with-arrow" href="#">Get directions</a>
-                    </p>
-                </address>
-                
-                <div class="email info">
-                    <p class="title text-uppercase font-weight-bold">Email</p>
-                    <p><a class="" href="mailto:<%= data.info.contact_info.email %>"><%= data.info.contact_info.email %></a></p>
-                </div>
-                
-                <div class="open-hours info">
-                    <p class="title text-uppercase font-weight-bold">Walk right in</p>
-                    <p>9:30 AM to 7:00 PM (IST) - Monday to Friday</p>
-                </div>
-                
-            </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <form id='contact-form'>
+          <div class="form-group required">
+            <label for="InputName">Name</label>
+            <input type="text" class="form-control input-lg" id="InputName" placeholder="Name">
+          </div>
+          <div class="form-group required">
+            <label for="InputEmail">Email</label>
+            <input type="email" class="form-control input-lg" id="InputEmail" placeholder="Email">
+          </div>
+          <div class="form-group required">
+            <label for="InputHelp">How can we help you?</label>
+            <textarea class="form-control input-lg" id="InputHelp" placeholder="" rows="3"></textarea>
+          </div>
+
+          <button id="contact-button" type="submit" class="btn btn-submit with-pressed-effect text-uppercase full-width">Submit</button>
+        </form>
+      </div>
+      <div class="col-sm-6 contact-info-container">
+        <address class="info">
+          <p class="title text-uppercase font-weight-bold">Address</p>
+          <p>
+            <%  data.info.address.each do |line| %>
+              <span><%= line %></span>
+            <% end %>
+            <a class="with-arrow" href="#">Get directions</a>
+          </p>
+        </address>
+
+        <div class="email info">
+          <p class="title text-uppercase font-weight-bold">Email</p>
+          <p><a class="" href="mailto:<%= data.info.contact_info.email %>"><%= data.info.contact_info.email %></a></p>
         </div>
+
+        <div class="open-hours info">
+          <p class="title text-uppercase font-weight-bold">Walk right in</p>
+          <p>9:30 AM to 7:00 PM (IST) - Monday to Friday</p>
+        </div>
+
+      </div>
     </div>
+  </div>
 </section>
+
+<!-- Custom Theme JavaScript -->
+<%# <script src='google-sheet.js'></script> %>
 
 <%= partial 'footer_banner', locals: { message: 'Looking to work at Multunus?', button_text: "See career", button_styles: 'btn btn-secondary' } %>
