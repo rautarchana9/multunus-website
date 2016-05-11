@@ -27,7 +27,7 @@
 <section class="section section-striped our-work clearfix">
   <h1 class="title text-center font-weight-light">Our Work</h1>
   <div class="container">
-    <% data.work.case_studies.each do |case_study| %>
+    <% data.work.case_studies.first(2).each do |case_study| %>
       <%= partial 'case_study_card', locals: { case_study: case_study } %>
     <% end %>
   </div>
