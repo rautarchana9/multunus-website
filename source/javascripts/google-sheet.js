@@ -16,7 +16,7 @@ $(function (){
 
     // Here we fire the request to google sheet
     request = $.ajax({
-      url: "https://script.google.com/macros/s/AKfycbzZtWzoNRRPUh_U5f1JjRYjs5Vb5DqrizVlpztxKZ7NOz9WiJts/exec",
+      url: "https://script.google.com/macros/s/AKfycbwFIuDTVouqc6sLiEQs0uCH63zokYWAm6kp9DuGuqaLzAU2Eo8/exec",
         type: "post",
         data: payload
     });
