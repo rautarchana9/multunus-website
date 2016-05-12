@@ -4,6 +4,8 @@ $(function (){
 
   $('#contact-button').click(function(event){
     event.preventDefault();
+    this.innerHTML='Please wait ...'
+    $(this).prop("disabled",true);
     // Abort any pending request
     if (request) {
         request.abort();
@@ -20,11 +22,15 @@ $(function (){
         type: "post",
         data: payload
     });
+    var button = this
 
     // Callback handler that will be called on success
     request.done(function (response, textStatus, jqXHR){
         // Log a message to the console
         console.log(textStatus);
+    button.innerHTML='Submitted'
+    $('.form-group').hide();
+    $('.feedback').show();
     });
 
     // Callback handler that will be called on failure

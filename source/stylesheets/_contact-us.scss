@@ -1,17 +1,25 @@
 .contact-info-container {
-    @include normal-and-xs-property('padding-top', 0, 40px);
-    @include normal-and-xs-property('margin-top', 0, 40px);
-    @include normal-and-xs-property('border-top', none, 1px solid #d8d8d8);
-    p {
-        font-size: $font-size-medium;
+  @include normal-and-xs-property('padding-top', 0, 40px);
+  @include normal-and-xs-property('margin-top', 0, 40px);
+  @include normal-and-xs-property('border-top', none, 1px solid #d8d8d8);
+  p {
+    font-size: $font-size-medium;
+  }
+  address {
+    p span {
+      display: block;
     }
-    address {
-        p span {
-            display: block;
-        }
-    }
-    .info {
-        @include normal-and-xs-property('padding', 0 50px, 0);
-        margin-bottom: 40px;
-    }
+  }
+  .info {
+    @include normal-and-xs-property('padding', 0 50px, 0);
+    margin-bottom: 40px;
+  }
+}
+.feedback {
+  height: 345px;
+  p {
+    font-size: $font-size-h3;
+    display: flex;
+    align-items: center;
+  }
 }
