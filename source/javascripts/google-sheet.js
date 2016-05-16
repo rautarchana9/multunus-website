@@ -47,7 +47,7 @@ function getFormInputs(){
 
 function sendRequest(formInputs){
   return $.ajax({
-    url:"https://script.google.com/a/macros/multunus.com/s/AKfycbyTz0JTsT7q_ldei3oqpqtM9MDewsoL8h7MWpYuSOtsPai0MzU/exec",
+    url:"https://script.google.com/macros/s/AKfycbwFIuDTVouqc6sLiEQs0uCH63zokYWAm6kp9DuGuqaLzAU2Eo8/exec",
          type: "post",
          data: formInputs});
 
