@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '2.3.1'
 
 gem 'middleman', '~> 4.1', '>= 4.1.6'
-gem 'middleman-blog', '~> 4.0'
+gem 'middleman-blog', :git => 'https://github.com/middleman/middleman-blog', :branch => 'master'
 gem 'middleman-sprockets', '~> 4.0.0.rc'
 
 gem 'middleman-livereload', '~> 3.4', '>= 3.4.6'
