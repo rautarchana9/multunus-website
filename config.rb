@@ -52,6 +52,15 @@ page "/feed.xml", layout: false
 # Reload the browser automatically whenever files change
 configure :development do
   activate :livereload
+  #activate :disqus do |d|
+  # # using a special shortname
+  # d.shortname = "multunus-test"
+  # # or setting to `nil` will stop Disqus loading
+  # d.shortname = nil
+  # end
+end
+activate :disqus do |d|
+  d.shortname = 'mymultunuswebsite'# Replace with your Disqus shortname.
 end
 
 # Methods defined in the helpers block are available in templates
@@ -63,6 +72,10 @@ end
 
 # Build-specific configuration
 configure :build do
+  #activate :disqus do |d|
+  # # using a diffrent shortname for production
+  # d.shortname = "multunus-prod"
+  #end
   # Minify CSS on build
   activate :minify_css
 
