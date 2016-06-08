@@ -18,8 +18,7 @@ $(function (){
   // Here we fire the request to google sheet
   request = sendRequest(formInputs);
   var button = this
-
-    // Callback handler that will be called on success
+  // Callback handler that will be called on success
     onSuccess(request, button);
   // Callback handler that will be called on failure
   onFailure(request);
@@ -50,8 +49,8 @@ function sendRequest(formInputs){
          url: "https://script.google.com/macros/s/AKfycbywCAA1m1IumdKnZaDKliTLpPkpTbQGyX48ebbxJeduvZSA_v5i/exec",
          type: "post",
          data: formInputs});
-
 }
+
 function onSuccess(request, button){
   request.done(function (response, textStatus, jqXHR){
     // Log a message to the console
