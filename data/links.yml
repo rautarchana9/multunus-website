@@ -9,6 +9,8 @@ nav_links:
                   link: '/development'
                 - title: Growth
                   link: '/growth'
+        - title: Blog
+          link: '/blog'
         - title: About
           link: '/about-us'
         - title: Contact us
