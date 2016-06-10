@@ -41,9 +41,9 @@ Navigating the whole process of systematically de-risking your business model is
 
 The first thing to realize is that every startup has the following stages of growth:
 
-[caption id="attachment_6033" align="alignnone" width="638"]
-[![Lean Startup stages](http://www.multunus.com/wp-content/uploads/2016/03/Lean-analytics-stages.jpg)](http://www.multunus.com/wp-content/uploads/2016/03/Lean-analytics-stages.jpg) Source : 
-[Slideshare on Understanding lean Analytics by Ben Yoskovitz](http://www.slideshare.net/Leananalytics/understanding-lean-analytics-and-how-analytics-helps-businesses-win-17324564)[/caption]
+
+![Lean Startup stages](http://www.multunus.com/wp-content/uploads/2016/03/Lean-analytics-stages.jpg) 
+*Lean startup*
 
 
 ##Which stage am I in?
